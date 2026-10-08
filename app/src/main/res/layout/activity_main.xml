@@ -39,23 +39,21 @@
         android:layout_marginEnd="148dp"
         android:layout_marginBottom="80dp"
         android:text="Esperando mensaje..."
-        app:layout_constraintBottom_toTopOf="@+id/TextViewContador"
+        app:layout_constraintBottom_toTopOf="@+id/TextViewContador1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/TextViewContador"
+        android:id="@+id/TextViewContador1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
-        android:layout_marginEnd="181dp"
-        android:layout_marginBottom="52dp"
-        android:text="Contador..."
-        app:layout_constraintBottom_toTopOf="@+id/btnServidor"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="67dp"
+        android:text="Contador cliente..."
+        app:layout_constraintEnd_toStartOf="@+id/textViewContador2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="248dp" />
 
     <Button
         android:id="@+id/btnContador"
@@ -68,6 +66,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewContador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:text="Contador servidor..."
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="248dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

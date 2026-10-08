@@ -105,11 +105,23 @@ class MainActivity : AppCompatActivity() {
         val btnServidor = findViewById<Button>(R.id.btnServidor)
         val btnCliente = findViewById<Button>(R.id.btnCliente)
         val btnContador = findViewById<Button>(R.id.btnContador)
-
+        val TextViewContador1 = findViewById<TextView>(R.id.TextViewContador1)
+        var numContar = 0
 
         lanzador.launch(permisos)
 
-        lanzador.launch(permisos)
+        btnContador.setOnClickListener{
+            if (txtActual == false){
+                Toast.makeText(this, "Sistema apagado",
+                    Toast.LENGTH_SHORT).show()
+            }else{
+                numContar++
+                TextViewContador1.text = numContar.toString()
+
+                Toast.makeText(this, "Hola Gotoh",
+                    Toast.LENGTH_SHORT).show()
+            }
+        }
 
         btnServidor.setOnClickListener {
             if (permisosOk) iniciarComoServidor()
@@ -125,5 +137,10 @@ class MainActivity : AppCompatActivity() {
             insets
         }
     }
+
+
+
+
+
 
 }
